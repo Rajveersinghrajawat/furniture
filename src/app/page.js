@@ -1,16 +1,13 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Index from "./Pages/home/page";
+
 
 
 export default function Home() {
   return (
       <>
-<<<<<<< HEAD
-     
-=======
-    
-      <h1>Hello</h1>
->>>>>>> 34883e99e18b41ef9f6ecdea74ef69b183e0453b
+      <Index/>
       </>
   );
 }
