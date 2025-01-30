@@ -36,6 +36,83 @@ a:active a{
   color: #c09578;
 }
 
+.newsletter_area {
+  padding-bottom: 70px;
+  margin-bottom: 0px;
+}
+
+.product_bottom_two {
+  background: #f8f9f9;
+  padding: 70px 0 50px;
+  /* margin-bottom: 77px; */
+}
+
+.newsletter_content {
+  text-align: center;
+}
+
+.newsletter_content h2 {
+  text-transform: capitalize;
+  color: #242424;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.newsletter_content p {
+  line-height: 26px;
+  margin-bottom: 37px;
+}
+
+.newsletter_content form {
+  width: 690px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.newsletter_content form input {
+  width: 100%;
+  padding: 10px 224px 10px 20px;
+  border: 2px solid #ebebeb;
+  background: none;
+  color: #a7a7a7;
+  border-radius: 4px;
+}
+
+.newsletter_content form button {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 60px;
+  background: #c09578;
+  color: #fff;
+  height: 100%;
+  border: 0;
+  border-radius: 4px;
+  text-transform: capitalize;
+}
+
+#newsletter_form small {
+  float: left;
+}
+
+.mailchimp-success {
+  text-align: center;
+  color: green;
+  margin: 0 auto;
+  max-width: 550px;
+}
+
+.mailchimp-error {
+  text-align: center;
+  color: green;
+}
+
+/* footer */
 .widgets_container > h3 {
   font-size: 20px;
   line-height: 26px;
@@ -170,6 +247,34 @@ a:active a{
 }
 
 @media only screen and (min-width: 320px) and (max-width: 556px){
+
+  .banner_content h2 {
+    font-size: 20px;
+    line-height: 23px;
+}
+
+.newsletter_area {
+    padding-bottom: 60px;
+    margin-bottom: 55px;
+}
+
+.newsletter_content form {
+  width: 100%;
+}
+
+.newsletter_content form button {
+  padding: 0 17px;
+  font-size: 14px;
+}
+.newsletter_content form input {
+  padding: 8px 109px 8px 10px;
+}
+
+.newsletter_content form button {
+  padding: 0 17px;
+  font-size: 14px;
+}
+
 .widgets_container {
   margin-bottom: 25px;
 }

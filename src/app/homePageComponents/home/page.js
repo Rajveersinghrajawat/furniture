@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { Col, Container, Row } from 'react-bootstrap'
+import { Col, Container, Form, Row } from 'react-bootstrap'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -33,41 +33,65 @@ export default function Index() {
 
             </Container>
 
-            <section  className='border-bottom'>
-            <Container>
-                <Row className='my-4'>
-                    <Col className='cat col-lg-4 col-md-6 col-sm-12 p-2'>
-                        <div className='category-1 '>
-                            <img src='/124ad5ba-005d-4b47-a707-a9a87033833a-1670180400.webp' />
-                            <div className="banner_content">
-                                <p>Design Creative</p>
-                                <h2>Chair Collection</h2>
+            <section className='border-bottom'>
+                <Container>
+                    <Row className='my-4'>
+                        <Col lg={4} md={6} className='p-2'>
+                            <div className='category-1 '>
+                                <img src='/124ad5ba-005d-4b47-a707-a9a87033833a-1670180400.webp' />
+                                <div className="banner_content">
+                                    <p>Design Creative</p>
+                                    <h2>Chair Collection</h2>
+                                </div>
                             </div>
-                        </div>
-                    </Col>
+                        </Col>
 
-                    <Col className='overflow-hidden col-lg-4 col-md-6 col-sm-12 p-2'>
-                        <div className='category-2'>
-                            <img src='0d588bec-d9a0-4645-8e7a-b49ef67b34be-1670180400.webp' />
-                            <div className="banner_content">
-                                <p>Bestselling Products</p>
-                                <h2>Chair Collection</h2>
+                        <Col lg={4} md={6} className='p-2'>
+                            <div className='category-2'>
+                                <img src='0d588bec-d9a0-4645-8e7a-b49ef67b34be-1670180400.webp' />
+                                <div className="banner_content">
+                                    <p>Bestselling Products</p>
+                                    <h2>Chair Collection</h2>
+                                </div>
                             </div>
-                        </div>
-                    </Col>
+                        </Col>
 
-                    <Col className='overflow-hidden col-lg-4 col-md-6 col-sm-12 p-2'>
-                        <div className='category-1 '>
-                            <img src='/124ad5ba-005d-4b47-a707-a9a87033833a-1670180400.webp' />
-                            <div className="banner_content">
-                                <p>Onsale Products</p>
-                                <h2>Chair Collection</h2>
+                        <Col lg={4} md={6} className='p-2'>
+                            <div className='category-1 '>
+                                <img src='/124ad5ba-005d-4b47-a707-a9a87033833a-1670180400.webp' />
+                                <div className="banner_content">
+                                    <p>Onsale Products</p>
+                                    <h2>Chair Collection</h2>
+                                </div>
                             </div>
-                        </div>
-                    </Col>
+                        </Col>
 
-                </Row>
-            </Container>
+                    </Row>
+                </Container>
+            </section>
+
+
+            <section className='newsletter_area product_bottom_two'>
+                <Container>
+                    <Row>
+                        <Col xs={12}>
+                            <div className="newsletter_content">
+                                <h2>Our Newsletter</h2>
+                                <p>Get E-mail updates about our latest shop and special offers.</p>
+                                <div className="subscribe_form">
+                                    <Form method="POST" action="https://wscubetech.co/Assignments/furniture" id="newsletter_form" className="mc-form footer-newsletter bv-form">
+                                        <div className="form-group has-feedback">
+                                            <input id="mc-email" name="email" type="email" placeholder="Email address..." data-bv-field="email"/>
+
+                                           
+                                                <button id="mc-submit">Subscribe</button>
+                                                </div>
+                                    </Form>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </section>
         </>
     )

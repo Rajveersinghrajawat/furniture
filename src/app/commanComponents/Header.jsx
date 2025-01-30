@@ -27,9 +27,9 @@ export default function Header() {
                 </Container>
             </Container>
 
-            <Container fluid className="border-bottom border-1">
+            <Container fluid className="main_header border-bottom border-1">
                 <Container>
-                    <Col className="col-lg-6 py-4">
+                    <Col lg={6} className="logo-items py-4">
                         <div className="logo">
                             <img src="https://wscubetech.co/Assignments/furniture/storage/app/public/uploads/images/company-profile/logo/cccfbdab-3bec-439f-88b9-5694698cd302-1670132652.png" className="img-fluid" alt="logo" />
                         </div>
