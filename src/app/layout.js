@@ -1,6 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from "./commanComponents/Header";
 import Footer from "./commanComponents/Footer";
 import "slick-carousel/slick/slick.css";
