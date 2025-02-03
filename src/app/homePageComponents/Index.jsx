@@ -4,8 +4,8 @@ import { Col, Container, Form, Row } from 'react-bootstrap'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import "../css/Banner.css"
-import "../../globals.css";
+import "./css/Banner.css"
+import "../globals.css";
 
 
 export default function Index() {

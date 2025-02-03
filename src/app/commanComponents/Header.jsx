@@ -36,6 +36,7 @@ export default function Header() {
                     </Col>
 
                     <Col className="col-lg-6">
+                    fddfdfdfdfdd
                     </Col>
                 </Container>
             </Container>
