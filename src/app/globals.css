@@ -36,6 +36,58 @@ a:active a{
   color: #c09578;
 }
 
+.trending_collection{
+  background: url('/e9234fa4-3ff6-4a6e-a00e-0c9ff26e7b20-1670180400.jpg')no-repeat center;
+  background-size: cover;
+  height: 450px;
+}
+
+
+.banner_text {
+  text-align: left;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.banner_text:hover {
+  transform: scale(1.05);
+}
+
+.banner_text a:hover {
+  background: #c09578;
+  color: #fff;
+}
+
+.banner_text h2 {
+  font-size: 50px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+  color: #242424;
+  font-weight: 700;
+  line-height: 65px;
+}
+
+.banner_text > span {
+  font-size: 16px;
+  margin: 0;
+  display: block;
+  color: #5a5a5a;
+}
+
+.banner_text a {
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #c09578;
+  border: 2px solid #c09578;
+  padding: 0 45px;
+  border-radius: 3px;
+  margin-top: 70px;
+  line-height: 46px;
+  display: inline-block;
+}
+
 .newsletter_area {
   padding-bottom: 70px;
   margin-bottom: 0px;
@@ -100,17 +152,7 @@ a:active a{
   float: left;
 }
 
-.mailchimp-success {
-  text-align: center;
-  color: green;
-  margin: 0 auto;
-  max-width: 550px;
-}
 
-.mailchimp-error {
-  text-align: center;
-  color: green;
-}
 
 /* footer */
 .widgets_container > h3 {
