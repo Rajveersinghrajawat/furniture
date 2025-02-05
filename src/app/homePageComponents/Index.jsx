@@ -4,8 +4,14 @@ import { Col, Container, Form, Row } from 'react-bootstrap'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+<<<<<<< HEAD:src/app/homePageComponents/Index.jsx
 import "./css/Banner.css"
 import "../globals.css";
+=======
+import "../css/Banner.css"
+import "../../globals.css";
+import Link from 'next/link';
+>>>>>>> c4f702dcc5d0980a8e9fbfc1920edf4276758f5a:src/app/homePageComponents/home/page.js
 
 
 export default function Index() {
@@ -71,6 +77,19 @@ export default function Index() {
             </section>
 
 
+            <section>
+                <Container fluid className='trending_collection'>
+                    <Container className='py-5'>
+                        <div className="banner_text p-4">
+                            <h2>New Trending Collection</h2>
+                            <span>We Believe That Good Design is Always in Season</span>
+                            <Link href='/'>shopping Now</Link>
+                        </div>
+                    </Container>
+                </Container>
+            </section>
+
+
             <section className='newsletter_area product_bottom_two'>
                 <Container>
                     <Row>
@@ -81,11 +100,11 @@ export default function Index() {
                                 <div className="subscribe_form">
                                     <Form method="POST" action="https://wscubetech.co/Assignments/furniture" id="newsletter_form" className="mc-form footer-newsletter bv-form">
                                         <div className="form-group has-feedback">
-                                            <input id="mc-email" name="email" type="email" placeholder="Email address..." data-bv-field="email"/>
+                                            <input id="mc-email" name="email" type="email" placeholder="Email address..." data-bv-field="email" />
 
-                                           
-                                                <button id="mc-submit">Subscribe</button>
-                                                </div>
+
+                                            <button id="mc-submit">Subscribe</button>
+                                        </div>
                                     </Form>
                                 </div>
                             </div>
