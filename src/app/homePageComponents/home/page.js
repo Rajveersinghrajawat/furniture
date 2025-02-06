@@ -7,7 +7,10 @@ import "slick-carousel/slick/slick-theme.css";
 import "../css/Banner.css"
 import "../../globals.css";
 import Link from 'next/link';
-
+import { CiCircleCheck } from "react-icons/ci";
+import { BiWorld } from "react-icons/bi";
+import { LuClock4 } from "react-icons/lu";
+import { IoStar } from "react-icons/io5";
 
 export default function Index() {
     var settings = {
@@ -72,6 +75,7 @@ export default function Index() {
             </section>
 
 
+
             <section>
                 <Container fluid className='trending_collection'>
                     <Container className='py-5'>
@@ -84,6 +88,119 @@ export default function Index() {
                 </Container>
             </section>
 
+
+            <section className='shipping_two product_bottom_two '>
+                <Container>
+                    <Row>
+                        <Col lg={4} md={4}>
+                            <div className="single-shipping">
+                                <div className="shipping_icone icone_1">
+                                    <BiWorld />
+                                </div>
+                                <div className="shipping_content">
+                                    <h3>Free Shipping</h3>
+                                    <p>Free shipping on all order</p>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col lg={4} md={4}>
+                            <div className="single-shipping">
+                                <div className="shipping_icone icone_2">
+                                    <CiCircleCheck />
+                                </div>
+                                <div className="shipping_content">
+                                    <h3>Free Shipping</h3>
+                                    <p>Free shipping on all order</p>
+                                </div>
+                            </div>
+                        </Col>
+
+                        <Col lg={4} md={4}>
+                            <div className="single-shipping">
+                                <div className="shipping_icone icone_3">
+                                    <LuClock4 />
+                                </div>
+                                <div className="shipping_content">
+                                    <h3>Free Shipping</h3>
+                                    <p>Free shipping on all order</p>
+                                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section>
+
+           
+            <section className='testimonial_are mt-5'>
+                <Container className='testimonial_titile'>
+                    <Row>
+                        <h3 className='pb-4'>What Our Custumers Say ?</h3>
+
+                        <Slider {...settings}>
+
+                            <div className="single_testimonial">
+                                <p>These guys have been absolutely outstanding. Perfect Themes and the best of all that you have many options to choose! Best Support team ever! Very fast responding! Thank you very much! I highly recommend this theme and these people!</p>
+                                <img src="https://wscubetech.co/Assignments/furniture/storage/app/public/uploads/images/testimonial/c6381687-5a5e-4914-9373-9cbec4937be6-1670161604.jpg" height={100} className='pb-3' alt="" />
+                                <span className="name">Kathy Young</span>
+                                <span className="job_title">CEO of SunPark</span>
+                                <div className="product_ratting pb-4">
+                                    <ul>
+
+                                        <li><a href="#"><IoStar /></a></li>
+
+                                        <li><a href="#"><IoStar /></a></li>
+
+                                        <li><a href="#"><IoStar /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="single_testimonial">
+                                <p>These guys have been absolutely outstanding. Perfect Themes and the best of all that you have many options to choose! Best Support team ever! Very fast responding! Thank you very much! I highly recommend this theme and these people!</p>
+                                <img src="https://wscubetech.co/Assignments/furniture/storage/app/public/uploads/images/testimonial/35b5a0a0-e80f-4038-a75a-2811de92118b-1670161614.png" height={100} alt="" />
+                                <span className="name">Kathy Young</span>
+                                <span className="job_title">CEO of SunPark</span>
+                                <div className="product_ratting">
+                                    <ul>
+
+                                        <li><a href="#"><IoStar /></a></li>
+
+                                        <li><a href="#"><IoStar /></a></li>
+
+                                        <li><a href="#"><IoStar /></a></li>
+
+                                        <li><a href="#"><IoStar /></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div className="single_testimonial">
+                                <p>These guys have been absolutely outstanding. Perfect Themes and the best of all that you have many options to choose! Best Support team ever! Very fast responding! Thank you very much! I highly recommend this theme and these people!</p>
+                                <img src="https://wscubetech.co/Assignments/furniture/storage/app/public/uploads/images/testimonial/3023f95a-ce85-434c-b9c5-2b0943b865e2-1670161621.jpg" height={100} alt="" />
+                                <span className="name">Kathy Young</span>
+                                <span className="job_title">CEO of SunPark</span>
+                                <div className="product_ratting">
+                                    <ul>
+
+                                        <li><a href="#"><IoStar /></a></li>
+
+                                        <li><a href="#"><IoStar /></a></li>
+
+                                        <li><a href="#"><IoStar /></a></li>
+
+                                        <li><a href="#"><IoStar /></a></li>
+
+                                        <li><a href="#"><IoStar /></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </Slider>
+                    </Row>
+                </Container>
+            </section>
 
             <section className='newsletter_area product_bottom_two'>
                 <Container>
