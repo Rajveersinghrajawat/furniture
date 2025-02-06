@@ -28,7 +28,7 @@ export default function Header() {
             <div className="d-none d-lg-block" >
                 <Container fluid className="border-bottom">
                     <Container>
-                        <Row className="align-items-center justify-content-between">
+                        <Row className="align-items-center justify-content-between py-3 ">
                             <Col lg={7} md={12} className="p-0">
                                 <div className="top-header">
                                     <p><span>Contact us 24/7</span>: +91-9781234560 / furniture@gmail.com</p>
@@ -77,6 +77,90 @@ export default function Header() {
                         </Row>
                     </Container>
                 </Container>
+
+                <Container fluid className="border-bottom border-1">
+                    <div className="menu">
+                        <nav>
+                            <ul className="d-flex justify-content-center">
+                                <li className="active">
+                                    <Link href="#">Home</Link>
+                                </li>
+                                <li>
+                                    <Link href="#">LIVING</Link>
+                                    <ul className="mega_menu d-flex">
+                                        <li>
+                                            <a>Tables</a>
+                                            <ul>
+                                                <li><a href="#">Side and End Tables</a></li>
+                                                <li><a href="#">Nest Of Tables</a></li>
+                                                <li><a href="#">Console Table</a></li>
+                                                <li><a href="#">Coffee Table Sets</a></li>
+                                                <li><a href="#">Coffee Tables</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>Living Storage</a>
+                                            <ul>
+                                                <li><a href="#">Prayer Units</a></li>
+                                                <li><a href="#">Display Unit</a></li>
+                                                <li><a href="#">Shoe Racks</a></li>
+                                                <li><a href="#">Chest Of Drawers</a></li>
+                                                <li><a href="#">Cabinets and Sideboard</a></li>
+                                                <li><a href="#">Bookshelves</a></li>
+                                                <li><a href="#">TV Units</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>Mirrors</a>
+                                            <ul>
+                                                <li><a href="#">Wooden Mirrors</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <Link href="#">SOFA</Link>
+                                    <ul className="mega_menu d-flex">
+                                        <li>
+                                            <a>Sofa Cum Bed</a>
+                                            <ul>
+                                                <li><a href="#">Wooden Sofa Cum Bed</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>Sofa Sets</a>
+                                            <ul>
+                                                <li><a href="#">L Shape Sofa</a></li>
+                                                <li><a href="#">1 Seater Sofa</a></li>
+                                                <li><a href="#">2 Seater Sofa</a></li>
+                                                <li><a href="#">3 Seater Sofa</a></li>
+                                                <li><a href="#">4 Seater Sofa</a></li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <a>Swing Jhula</a>
+                                            <ul>
+                                                <li><a href="#">Wooden Jhula</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <Link href="#">PAGES</Link>
+                                    <ul className="sub_menu">
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Cart</a></li>
+                                        <li><a href="#">Checkout</a></li>
+                                        <li><a href="#">Frequently Asked Questions</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <Link href="#">CONTACT US</Link>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </Container>
             </div>
 
             {/* Mobile Header */}
@@ -95,6 +179,7 @@ export default function Header() {
                         <IoCart className="fs-4" />
                     </div>
                     <div className="barIcon" onClick={handleShow} ><FaBars /></div>
+                    <OffcanvasMenu className="mobileMenu" show={show} setShow={setShow} />
 
                 </div>
                 
