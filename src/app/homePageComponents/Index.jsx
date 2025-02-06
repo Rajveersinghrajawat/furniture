@@ -4,14 +4,11 @@ import { Col, Container, Form, Row } from 'react-bootstrap'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-<<<<<<< HEAD:src/app/homePageComponents/Index.jsx
+// <<<<<<< HEAD:src/app/homePageComponents/Index.jsx
 import "./css/Banner.css"
 import "../globals.css";
-=======
-import "../css/Banner.css"
-import "../../globals.css";
 import Link from 'next/link';
->>>>>>> c4f702dcc5d0980a8e9fbfc1920edf4276758f5a:src/app/homePageComponents/home/page.js
+
 
 
 export default function Index() {

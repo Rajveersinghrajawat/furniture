@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 * {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
+
 }
 
 .header {
@@ -158,6 +160,7 @@
 
 
 .mid-right-div {
+
   display: grid;
   grid-template-columns: 50% 10% 26%;
   justify-content: space-evenly;
@@ -181,7 +184,7 @@
 
 .cart_quantity {
   position: absolute;
-  left: -11px;
+  left: -12px;
   width: 20px;
   height: 20px;
   line-height: 16px;
@@ -193,30 +196,7 @@
 }
 
 /* for cart modal */
-.cartOuterDiv {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  background-color: #2121216d;
-  top: 0px;
-  left: 0px;
-  cursor: default !important;
-  visibility: hidden;
-  opacity: 0;
-  transition: 1s;
 
-}
-
-.cartInnerDiv {
-  width: 25%;
-  height: 100vh;
-  position: absolute;
-  right: -50%;
-  top: 0px;
-  background-color: white;
-  padding: 10px;
-  transition: 1s !important;
-}
 
 
 .cartBtn button:nth-child(1) {
@@ -247,24 +227,11 @@
   border-radius: 5px;
 }
 
-.activeCartInnerDiv {
-  right: 0% !important;
-
+.mobileMenu {
+  display: none;
 }
 
-.activeCartOuterDiv {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  background-color: #2121216d;
-  top: 0px;
-  left: 0px;
-  cursor: default !important;
-  transition: 1s;
-  visibility: visible ;
-  opacity: 1 ;
-  
-}
+
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* for Mobile headers */
@@ -277,7 +244,7 @@
     text-align: center;
     line-height: 30px;
   }
-  
+
   .header {
     display: none;
   }
@@ -293,14 +260,156 @@
   .menu {
     display: none;
   }
-  .cartOuterDiv{
-    z-index: 99 !important;
+
+  .modalClass {
+    width: 75% !important;
   }
 
-  .cartInnerDiv{
-    width:90%;
-    z-index: 999 !important;
+
+  .modalClass .btn-close:focus {
+    box-shadow: none !important;
+    outline: none !important;
   }
+
+
+  /* for menu offcanWas */
+  .mobileMenu {
+    display: block;
+  }
+
+  .menuOffCanwas {
+    width: 80% !important;
+  }
+
+  .menuOffCanwas .btn-close:focus {
+    box-shadow: none !important;
+    outline: none !important;
+
+  }
+
+  .menuOffCanwas .btn-close {
+    font-size: 12px !important;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+  }
+
+  .menuOffCanwas p {
+    text-align: center;
+    font-size: 12px;
+    color: black;
+  }
+
+  /* Faq Remove blue background when expanded */
+  .accordion-button:not(.collapsed) {
+    background-color: transparent !important;
+    color: inherit !important;
+    box-shadow: none !important;
+  }
+
+  /* Remove blue border on focus */
+  .accordion-button:focus {
+    box-shadow: none !important;
+  }
+
+  /* Optional: Customize the header colors */
+  .accordion-button {
+    font-size: 14px !important;
+    background-color: white !important;
+    color: #5a5a5a !important;
+    border: none !important;
+    font-family: "Rubik", serif !important;
+  }
+
+  .accordion-item{
+    border: none !important;
+    color: #CA915A !important;
+    border-bottom: 1px solid #ebebeb !important;
+    
+    
+  }
+  .accordion-button::after {
+    background-size:12px !important; 
+    
+  }
+  .noneArrow.accordion-button::after {
+    display: none !important;
+  }
+  .noneArrow .accordion-button::after {
+    display: none !important;
+  }
+
 }
 
+/* function OffcanvasMenu({ show, setShow }) {
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    return (
+        <Offcanvas show={show} onHide={handleClose} className="menuOffCanwas" >
+            <Offcanvas.Header closeButton>
+                <Offcanvas.Title></Offcanvas.Title>
 
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+                <p>Contact us 24/7 : +91-9781234560 </p>
+                <p>furniture@gmail.com </p>
+
+                    <Accordion>
+                        <Accordion.Item eventKey="0" className="noneArrow">
+                            <Accordion.Header>Home</Accordion.Header>
+                        </Accordion.Item>
+
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>Living</Accordion.Header>
+                            <Accordion.Body>
+                                <Accordion>
+                                    <Accordion.Item eventKey="0">
+                                        <Accordion.Header>Tables</Accordion.Header>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header>Living Storage</Accordion.Header>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>Mirrors</Accordion.Header>
+                                    </Accordion.Item>
+                                </Accordion>
+                            </Accordion.Body>
+                        </Accordion.Item>
+
+                        <Accordion.Item eventKey="2">
+                            <Accordion.Header>Sofa</Accordion.Header>
+                        </Accordion.Item>
+
+                        <Accordion.Item eventKey="3">
+                            <Accordion.Header>Pages</Accordion.Header>
+                            <Accordion.Body>
+                                <Accordion>
+                                    <Accordion.Item eventKey="0">
+                                        <Accordion.Header>About Us</Accordion.Header>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="1">
+                                        <Accordion.Header>Cart</Accordion.Header>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="2">
+                                        <Accordion.Header>Checkout</Accordion.Header>
+                                    </Accordion.Item>
+
+                                    <Accordion.Item eventKey="3">
+                                        <Accordion.Header>Frequently Asked Questions</Accordion.Header>
+                                    </Accordion.Item>
+                                </Accordion>
+                            </Accordion.Body>
+                        </Accordion.Item>
+
+                        <Accordion.Item eventKey="4" className="noneArrow">
+                            <Accordion.Header>Login / Register</Accordion.Header>
+                        </Accordion.Item>
+                    </Accordion>
+
+            </Offcanvas.Body>
+        </Offcanvas>
+    )
+} */
