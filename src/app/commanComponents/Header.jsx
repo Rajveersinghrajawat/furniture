@@ -16,7 +16,6 @@ export default function Header() {
     return (
         <>
             <div className="d-none d-lg-block" >
-                {/* Top Header Section */}
                 <Container fluid className="border-bottom border-1">
                     <Container>
                         <Row className="header align-items-center justify-content-between">
@@ -35,7 +34,6 @@ export default function Header() {
                     </Container>
                 </Container>
 
-                {/* Main Header Section */}
                 <Container fluid className="main_header border-bottom border-1">
                     <Container>
                         <Row className="align-items-center justify-content-between py-4 ">
@@ -76,7 +74,6 @@ export default function Header() {
                     </Container>
                 </Container>
 
-                {/* Navigation Menu */}
                 <Container fluid className="border-bottom border-1">
                     <div className="menu">
                         <nav>
